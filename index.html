@@ -101,6 +101,21 @@
       font-weight: 500;
     }
 
+    .share-label {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+      gap: 2px;
+    }
+
+    .share-label .top {
+      font-weight: 500;
+    }
+
+    .share-label strong {
+      font-weight: 800;
+    }
+
     .icon {
       width: 56px;
       height: 56px;
@@ -111,11 +126,6 @@
       font-size: 28px;
       font-weight: 800;
       color: #ffffff;
-    }
-
-    .tumblr {
-      grid-column: 1 / -1;
-      max-width: 280px;
     }
 
     .youtube-wrap {
@@ -147,13 +157,6 @@
         font-size: 1rem;
       }
 
-      .share-list {
-        grid-template-columns: 1fr;
-      }
-
-      .tumblr {
-        max-width: none;
-      }
     }
   </style>
 </head>
@@ -203,23 +206,23 @@
         <div class="share-list">
           <a id="share-twitter" class="share-item" href="#" target="_blank" rel="noopener noreferrer">
             <span class="icon">𝕏</span>
-            <span>Share on Twitter</span>
+            <span class="share-label"><span class="top">Share on</span><strong>Twitter</strong></span>
           </a>
           <a class="share-item" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
             <span class="icon">♪</span>
-            <span>Share on TikTok</span>
+            <span class="share-label"><span class="top">Share on</span><strong>TikTok</strong></span>
           </a>
           <a class="share-item" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <span class="icon">◎</span>
-            <span>Share on Instagram</span>
+            <span class="share-label"><span class="top">Share on</span><strong>Instagram</strong></span>
           </a>
           <a id="share-facebook" class="share-item" href="#" target="_blank" rel="noopener noreferrer">
             <span class="icon">f</span>
-            <span>Share on Facebook</span>
+            <span class="share-label"><span class="top">Share on</span><strong>Facebook</strong></span>
           </a>
-          <a id="share-tumblr" class="share-item tumblr" href="#" target="_blank" rel="noopener noreferrer">
+          <a id="share-tumblr" class="share-item" href="#" target="_blank" rel="noopener noreferrer">
             <span class="icon">t</span>
-            <span>Share on Tumblr</span>
+            <span class="share-label"><span class="top">Share on</span><strong>Tumblr</strong></span>
           </a>
         </div>
 
