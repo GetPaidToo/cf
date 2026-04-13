@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Astrid Leave Home and Find Safe Housing</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #7c3aed;
+      --accent-hover: #6d28d9;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(31, 41, 55, 0.08);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+      color: #111827;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 1.3rem;
+      color: #111827;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    .share {
+      margin-top: 32px;
+      padding-top: 18px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .share-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .share-links a {
+      text-decoration: none;
+      color: #fff;
+      background: var(--accent);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .share-links a:hover,
+    .share-links a:focus-visible {
+      background: var(--accent-hover);
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <article class="card">
+      <h1>Help Astrid leave her parents’ house and find safe housing to transition</h1>
+
+      <p>Hi, my name is Astrid. I am a 19-year-old transfem non-binary person with autism (ASD), dyspraxia, sleep apnea and hearing loss. I am raising money so I can move out of my parents’ house, find safe housing, and finally start my transition.</p>
+
+      <p>For the past four years I have only been able to live as trans online. When I tried to come out to my parents at 15, it did not go well. As long as I stay in this house, I know I will never be allowed to transition.</p>
+
+      <p>Because of my autism, my parents tend to see me as incapable of living independently. I want the chance to prove that I can.</p>
+
+      <p>My home environment is not supportive. My dad supports the far-right Britain First party and frequently says transphobic and Islamophobic things.</p>
+
+      <p>My mum has been physically abusive in the past and often dismisses how her behaviour affects others.</p>
+
+      <p>Living here is extremely stressful and overstimulating, especially because my autism makes it difficult to cope with constant noise and conflict. I need to leave so I can live somewhere quiet, safe, and comfortable where I can finally be myself.</p>
+
+      <p>Any support would help me take the first steps toward independence and starting my transition.</p>
+
+      <p>Like I said before, I will never be allowed to transition as long as I stay in this house.</p>
+
+      <p>Any amount of money you can donate will help, and please don't feel bad if you can't.</p>
+
+      <h2>Short-term plan</h2>
+      <p>Once I reach my goal, the next Saturday, I will leave home. I will go to the police station and ask them to collect my passport.</p>
+      <p>I will then set up a bank account, settle down at a hotel until I can look for flats to rent, change my name via deed poll and buy HRT from a reputable online pharmacy.</p>
+      <p>Then, I will look into getting a job and start monetizing my YouTube videos.</p>
+
+      <h2>Where your money will go</h2>
+      <ul>
+        <li>$105 (£80) per day - hotel stay until I can start renting</li>
+        <li>$1200 (£900) - rent deposit</li>
+        <li>$1200 (£900) per month - rent</li>
+        <li>$60 (£45) per month - estrogen/spironolactone (HRT)</li>
+        <li>$330 (£250) per month - food and shopping</li>
+        <li>$240 (£180) per month - utilities (electricity, gas, water and internet)</li>
+        <li>$330 (£250) - clothing</li>
+      </ul>
+
+      <section class="share" aria-label="Share this crowdfunder">
+        <h2>Share this crowdfunder</h2>
+        <p class="muted">Use the buttons below to share this page on social media.</p>
+        <div class="share-links">
+          <a id="share-x" href="#" target="_blank" rel="noopener noreferrer">Share on Twitter/X</a>
+          <a id="share-tiktok" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">Share on TikTok</a>
+          <a id="share-instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Share on Instagram</a>
+          <a id="share-facebook" href="#" target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+          <a id="share-tumblr" href="#" target="_blank" rel="noopener noreferrer">Share on Tumblr</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    const shareText = "Help Astrid leave her parents' house and find safe housing to transition";
+    const shareUrl = encodeURIComponent(window.location.href);
+    const encodedText = encodeURIComponent(shareText);
+
+    document.getElementById('share-x').href = `https://twitter.com/intent/tweet?text=${encodedText}&url=${shareUrl}`;
+    document.getElementById('share-facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
+    document.getElementById('share-tumblr').href = `https://www.tumblr.com/widgets/share/tool?canonicalUrl=${shareUrl}&title=${encodedText}`;
+  </script>
+</body>
+</html>
